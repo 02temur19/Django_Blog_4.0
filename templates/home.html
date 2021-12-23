@@ -5,7 +5,7 @@
 {% endblock title %}
 
 {% block content %}
-    {% if user.is_authentificated %}
+    {% if user.is_authenticated %}
         {{ user.username }}, saytga xush kelibsiz!
         <p><a href="{% url 'logout' %}">Log Out</a></p>
     {% else %}
